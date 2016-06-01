@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand pull-left" href="img/logo.jpg"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span><img id="profile" src="img/VaultBoyFO3.png" class="img-circle"></span>John Doe <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Settings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#" role="button" data-toggle="modal" data-target="#signOut">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Modal-->
+        <div class="modal fade" id="signOut">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Are you sure to Log out?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="logOut()">Yes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.mod-->
+       
+                <div class="col-sm-2 col-md-2 col-xs-12 sidebar text-center"><!--dashboard-->
+                    <ul class="nav nav-stacked affix navbar-inverse">
+                        <li class="dashboard"><a href="index.html"><i class="glyphicon glyphicon-home"></i> <p> Dashboard</p></a></li>
+                        <li class="msg"><a href="#"><i class="glyphicon glyphicon-calendar"></i> <p>Messages</p></a></li>
+                        <li class="analytics"><a href="#"><i class="glyphicon glyphicon-stats"></i><p>Analytics</p></a></li>
+                        <li class="settings"><a href="#"><i class="glyphicon glyphicon-th-list"></i><p>Settings</p></a></li>
+                    </ul>
+                </div>
+         <div class="container-fluid">    
+            <div class="row">
+    			<div class="col-xs-6 col-sm-6 col-md-5">
+					<!-- PRICE ITEM -->
+				    <div class="panel price panel-red">
+						<div class="panel-heading  text-center">
+				            <h3>PRO PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+				</div>
+				
+				<div class="col-xs-6 col-sm-6 col-md-5">
+				
+					<!-- PRICE ITEM -->
+				    <div class="panel price panel-blue">
+						<div class="panel-heading arrow_box text-center">
+				            <h3>DEV PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$20 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-info"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-info"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-info"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-info" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+				</div>
+				
+				<div class="col-xs-6 col-sm-6 col-md-5">
+				
+					<!-- PRICE ITEM -->
+					<div class="panel price panel-green">
+						<div class="panel-heading arrow_box text-center">
+				            <h3>FREE PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-success" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+
+				</div>
+				
+				<div class="col-xs-6 col-sm-6 col-md-5">
+				
+					<!-- PRICE ITEM -->
+					<div class="panel price panel-grey">
+						<div class="panel-heading arrow_box text-center">
+				            <h3>FREE PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-primary" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+				</div>
+				
+				
+			</div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

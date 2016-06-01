@@ -2,6 +2,7 @@
   position: fixed;
     top: 50px;
     left:0;
+    height: 100%;
 }
 #profile{
     width: 30px;
