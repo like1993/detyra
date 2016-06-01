@@ -1,0 +1,28 @@
+.nav-stacked{
+  position: fixed;
+    top: 50px;
+    left:0;
+}
+#profile{
+    width: 30px;
+    height: 30px;
+}
+.dashboard{
+    border-left: 5px solid green;
+    
+}
+.msg{
+    border-left: 5px solid blue;
+    
+}
+.analytics{
+    border-left: 5px solid yellow;
+   
+}
+.settings{
+    border-left: 5px solid red;
+     
+}
+.glyphicon{
+    font-size: 30px;
+}
