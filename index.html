@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top ">
-            <div class="container">
+        <nav class="navbar navbar-inverse  ">
+            <div class="container-fluid">
                 <div class="navbar-header ">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -52,15 +52,19 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.mod-->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
+        <div class="container-fluid ">    
+            <div class="row">
+                <div class="col-sm-1 col-md-1 sidebar text-center"><!--dashboard-->
+                    <ul class="nav nav-sidebar navbar-inverse">
+                        <li class="dashboard"><a href="index.html"><i class="glyphicon glyphicon-home"></i> <p> Dashboard</p></a></li>
+                        <li class="msg"><a href="#"><i class="glyphicon glyphicon-calendar"></i> <p>Messages</p></a></li>
+                        <li class="analytics"><a href="#"><i class="glyphicon glyphicon-stats"></i><p>Analytics</p></a></li>
+                        <li class="settings"><a href="#"><i class="glyphicon glyphicon-th-list"></i><p>Settings</p></a></li>
+                    </ul>
+                </div>
+                
+                
+                <!--
                     <div class="modal-body">
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
@@ -136,7 +140,7 @@
         <div class="container-fluid">    
             <div class="row">
                 <div class="col-sm-2 col-md-2 sidebar text-center"><!--dashboard-->
-                    <ul class="nav nav-stacked affix navbar-inverse">
+                    <!--<ul class="nav nav-stacked affix navbar-inverse">
                         <li class="dashboard"><a href="index.html"><i class="glyphicon glyphicon-home"></i> <p> Dashboard</p></a></li>
                         <li class="msg"><a href="#"><i class="glyphicon glyphicon-calendar"></i> <p>Messages</p></a></li>
                         <li class="analytics"><a href="#"><i class="glyphicon glyphicon-stats"></i><p>Analytics</p></a></li>
@@ -149,7 +153,7 @@
                 </div>
                 <div class="col-md-5 col-sm-5">
                 </div>
-            </div>
+            </div>-->
         </div>
                 <script src="js/script.js"></script>
 

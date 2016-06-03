@@ -1,16 +1,26 @@
-.nav-stacked{
-  position: fixed;
-    top: 50px;
-    left:0;
+.nav-sidebar{
     height: 100%;
 }
+.sidebar{
+    margin-top: 0px;
+    padding-top: 0px !important;
+    margin-left: 0px !important;
+   
+}
+.navbar{
+    margin-bottom: 0px !important;
+}
+.container-fluid{
+    padding-left: 0 !important;
+}
+
 #profile{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 .dashboard{
     border-left: 5px solid green;
-    
+   
 }
 .msg{
     border-left: 5px solid blue;
@@ -26,4 +36,14 @@
 }
 .glyphicon{
     font-size: 30px;
+}
+.noClick{
+    width: 80%;
+    height: 80%;
+    background-color: aquamarine;
+}
+.click{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
 }
